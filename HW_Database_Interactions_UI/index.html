@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+        <script src="./form1.js"></script>
+    <title>CS 290 Section 400 - HW: Database Interactions and UI </title>
+  </head>
+  <body>
+
+     <!-- form submitting via get -->
+     <div id='form get'>
+     <h3>Form via Get</h3>
+     <form>
+      <fieldset>
+        <legend>Please Enter:</legend>
+        <label>Name:
+                <input type="text" name="name" id="trackerName" size="30" maxlength="160">
+        </label>
+		<p>
+        <label>Reps:
+                <input type="number" name="reps" id="trackerReps" size="30" maxlength="10">
+        </label>
+		<p>
+        <label>Weight:
+                <input type="number" name="weight" id="trackerWeight" size="30" maxlength="10">
+        </label>
+		<p>
+        <label>Date:
+                <input type="date" name="date" id="trackerDate">
+        </label>
+		<p>
+        Unit:
+		<p>
+        <label><input type="radio" name="unit" id="trackerUnit" value="lbs">lbs
+        </label>
+		<br>
+        <label><input type="radio" name="unit" id="trackerUnit" value="kgs">kgs
+        </label>
+		<p>
+        <input type="submit" id="trackerSubmit" value="Submit" />
+      </fieldset>
+    </form>
+        <div>
+                <h3>Result</h3>
+                <ul>
+                        <li><span>City:</span><span id="cityName"></span></li>
+                        <li><span>Current Temperature:</span><span id="currentTemp"></span></li>
+                        <li><span>Humidity:</span><span id="humidity"></span></li>
+                </ul>
+    </div>
+
+ </body>
+</html>

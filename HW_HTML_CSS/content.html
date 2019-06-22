@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>CS 290 Section 400 - HW Assignment: HTML/CSS </title>
+  </head>
+  <body>
+  
+    <!-- 6x6 table -->
+    <div id='table'>
+    <table>
+      <caption>Spring Quarter Grades for Ms. Jackson's Private Study Group</caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>English</th>
+          <th>Geometry</th>
+          <th>Biology</th>
+          <th>World History</th>
+          <th>Spanish 2</th>
+         </tr>
+      <tbody>
+        <tr>
+          <td><em>John</em></td>
+          <td>B</td>
+          <td>C</td>
+          <td>B</td>
+          <td>A</td>
+          <td>A-</td>
+        </tr>
+         <tr>
+          <td><em>Marlene</em></td>
+          <td>A</td>
+          <td>B</td>
+          <td>A-</td>
+          <td>B-</td>
+          <td>A</td>
+        </tr>
+         <tr>
+          <td><em>Jessie</em></td>
+          <td>B</td>
+          <td>B-</td>
+          <td>B</td>
+          <td>B</td>
+          <td>B+</td>
+        </tr>
+         <tr>
+          <td><em>Adam</em></td>
+          <td>D</td>
+          <td>C-</td>
+          <td>D+</td>
+          <td>F</td>
+          <td>B</td>
+        </tr>
+         <tr>
+          <td><em>Maryann</em></td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+           <td colspan="2">Footer 1</td>
+           <td colspan="4">Footer 2</td>
+        </tr>
+      </tfoot>
+    </table>
+    </div>
+
+
+     <!-- list with 3 items -->
+     <div id='list'>
+     <dl>
+       <dt>Highest GPA</dt>
+       <dd><b>Maryann</b></dd>
+       <dt>Lowest GPA</dt>
+       <dd><b>Adam</b></dd>
+       <dt>Most Average GPA</dt>
+       <dd><b>Jessie</b></dd>
+     </dl>
+     </div>
+     
+     
+     <!-- parent and child div blocks with CSS properties -->
+     <div class="outer-content">
+       <div class="inner-content">
+         Hello World!
+       </div>
+     </div>
+     
+     
+     
+     <!-- form submitting via post -->
+     <div id='form post'>
+     <h3>Form via Post</h3>
+     <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+      <fieldset>
+        <legend>Post Data:</legend>
+        <label>Text:
+            <input type="text" name="text_input" size="30" maxlength="160">
+        </label>
+        <br />
+        <label>Number:
+            <input type="number" name="numerical_input" size="30" maxlength="10">
+        </label>
+        <br />
+        <label>Password:
+            <input type="password" name="password_input" size="30" maxlength="100">
+        </label>
+        <br />
+        <h4>Candy</h4>
+        <p>Select Between:
+            <p>
+            <label>
+                <input type="radio" name="candy" value="snickers" />Snickers</label>
+            <p>
+            <label>
+                <input type="radio" name="candy" value="skittles" />Skittles</label>
+            <p>
+            <label>
+                <input type="radio" name="candy" value="mentos" />Mentos</label>
+        </p>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    </div>
+    
+    
+    <!-- form submitting via get -->
+    <div id='form get'>
+    <h3>Form via Get</h3>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+      <fieldset>
+        <legend>Get Data:</legend>
+        <label>Text:
+            <input type="text" name="text_input" size="30" maxlength="160">
+        </label>
+        <br />
+        <label>Number:
+            <input type="number" name="numerical_input" size="30" maxlength="10">
+        </label>
+        <br />
+        <label>Password:
+            <input type="password" name="password_input" size="30" maxlength="100">
+        </label>
+        <br />
+        <h4>Candy</h4>
+        <p>Select Between:
+            <p>
+            <label>
+                <input type="radio" name="candy" value="snickers" />Snickers</label>
+            <p>
+            <label>
+                <input type="radio" name="candy" value="skittles" />Skittles</label>
+            <p>
+            <label>
+                <input type="radio" name="candy" value="mentos" />Mentos</label>
+         </p>
+         <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    </div>
+
+  </body>
+</html>

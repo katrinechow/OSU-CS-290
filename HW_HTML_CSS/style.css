@@ -1,0 +1,35 @@
+table{
+    border-style:solid;
+}
+th, td{
+    border-style:solid;
+}
+
+/*nth-of-type usage referenced the following website:*/
+/*https://css-tricks.com/almanac/selectors/n/nth-of-type/*/
+tbody>tr:nth-of-type(odd){
+    background: red;
+    }
+tbody>tr:nth-of-type(even){
+    background: lavender;
+    }
+    
+.outer-content{
+    background-color:pink;
+    margin-top:20x;
+    width:75%;
+    height:40px;
+}
+
+.inner-content{
+    background-color:lightsteelblue;
+    /*Centering technique referenced below website: */
+    /*http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
+    margin:auto;              
+    position:relative;
+    top:50%;
+    transform:translateY(-50%);
+    text-align:center;
+    width:75%;
+    height:20px;
+}

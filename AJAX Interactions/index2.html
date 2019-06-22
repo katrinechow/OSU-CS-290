@@ -1,0 +1,39 @@
+<!--/*******************************************************************************
+ * Name: Katrine Chow
+ * Date: May 12, 2019
+ * Class: CS 290 Section 400 Web Development
+ * File: index2.html
+ * Description: This activity asks us to create a HTML form asking user for a City name or
+ *				zip code. Using the OpenWeatherMap API, receive and parse result to display
+ *				the location name, current temperature, and humidity.
+*******************************************************************************/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<script src="./form2.js"></script>
+    <title>CS 290 Section 400 - Activity: Ajax Interactions </title>
+  </head>
+  <body>   
+
+   <!-- form submitting via Post -->
+    <div id='form post'>
+    <h3>Form via Post</h3>
+    <form action="http://httpbin.org/post" method="post">
+      <fieldset>
+        <legend>Enter Text:</legend>
+        <label>Text:
+            <input type="text" name="textInput" id="textInput" size="30" maxlength="160">
+        </label>
+        
+         <input type="submit" id="textSubmit" value="Submit" />
+      </fieldset>
+    </form>
+	<div>
+		<h3>Received Text</h3>
+			<span></span><span id="receivedText"></span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+table{
+	border-style: solid;
+}
+
+th, td{
+	border-style: solid;
+	border-color: black;
+}
+
+div caption{
+	font-size: large;
+	font-weight: bold;
+	font-family: verdana;
+}
+
+th{
+	font-size: medium;
+	font-weight: bold;
+	font-family: verdana;
+	color: blue;
+}
+
+td{
+	font-size: medium;
+	font-family: verdana;
+	font-weight: bold;
+	color: black;
+}
